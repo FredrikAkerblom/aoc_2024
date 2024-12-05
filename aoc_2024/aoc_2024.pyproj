@@ -1,0 +1,68 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a4a65d13-3b62-4e69-8f5b-6b09a2b47de1</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>aoc_2024.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>aoc_2024</Name>
+    <RootNamespace>aoc_2024</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>
+    </CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <InterpreterArguments>-Xfrozen_modules=off</InterpreterArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="aoc_2024.py" />
+    <Compile Include="Day6\Day6.py" />
+    <Compile Include="Day5\Day5.py" />
+    <Compile Include="Day4\Day4.py" />
+    <Compile Include="Day3\Day3.py" />
+    <Compile Include="Day2\Day2.py" />
+    <Compile Include="Day1\Day1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Day6\" />
+    <Folder Include="Day5\" />
+    <Folder Include="Day4\" />
+    <Folder Include="Day3\" />
+    <Folder Include="Day2\" />
+    <Folder Include="Day1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Day6\Day6_Input.txt" />
+    <Content Include="Day6\Day6_Input_Example.txt" />
+    <Content Include="Day5\Day5_Input.txt" />
+    <Content Include="Day5\Day5_Input_Example.txt" />
+    <Content Include="Day4\Day4_Input.txt" />
+    <Content Include="Day4\Day4_Input_Example.txt" />
+    <Content Include="Day3\Day3_Input.txt" />
+    <Content Include="Day3\Day3_Input_Example.txt" />
+    <Content Include="Day2\Day2_Input.txt" />
+    <Content Include="Day2\Day2_Input_Example.txt" />
+    <Content Include="Day1\Day1_Input_Example.txt" />
+    <Content Include="Day1\Day1_Input.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
