@@ -27,6 +27,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="aoc_2024.py" />
+    <Compile Include="Day25\Day25.py" />
+    <Compile Include="Day24\Day24.py" />
+    <Compile Include="Day23\Day23.py" />
+    <Compile Include="Day22\Day22.py" />
+    <Compile Include="Day21\Day21.py" />
+    <Compile Include="Day20\Day20.py" />
+    <Compile Include="Day19\Day19.py" />
+    <Compile Include="Day18\Day18.py" />
+    <Compile Include="Day17\Day17.py" />
+    <Compile Include="Day16\Day16.py" />
+    <Compile Include="Day15\Day15.py" />
+    <Compile Include="Day14\Day14.py" />
+    <Compile Include="Day13\Day13.py" />
+    <Compile Include="Day12\Day12.py" />
+    <Compile Include="Day11\Day11.py" />
+    <Compile Include="Day10\Day10.py" />
+    <Compile Include="Day9\Day9.py" />
+    <Compile Include="Day8\Day8.py" />
+    <Compile Include="Day7\Day7.py" />
     <Compile Include="Day6\Day6.py" />
     <Compile Include="Day5\Day5.py" />
     <Compile Include="Day4\Day4.py" />
@@ -35,6 +54,25 @@
     <Compile Include="Day1\Day1.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Day25\" />
+    <Folder Include="Day24\" />
+    <Folder Include="Day23\" />
+    <Folder Include="Day22\" />
+    <Folder Include="Day21\" />
+    <Folder Include="Day20\" />
+    <Folder Include="Day19\" />
+    <Folder Include="Day18\" />
+    <Folder Include="Day17\" />
+    <Folder Include="Day16\" />
+    <Folder Include="Day15\" />
+    <Folder Include="Day14\" />
+    <Folder Include="Day13\" />
+    <Folder Include="Day12\" />
+    <Folder Include="Day11\" />
+    <Folder Include="Day10\" />
+    <Folder Include="Day9\" />
+    <Folder Include="Day8\" />
+    <Folder Include="Day7\" />
     <Folder Include="Day6\" />
     <Folder Include="Day5\" />
     <Folder Include="Day4\" />
@@ -43,6 +81,44 @@
     <Folder Include="Day1\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Day25\Day25_Input.txt" />
+    <Content Include="Day25\Day25_Input_Example.txt" />
+    <Content Include="Day24\Day24_Input.txt" />
+    <Content Include="Day24\Day24_Input_Example.txt" />
+    <Content Include="Day23\Day23_Input.txt" />
+    <Content Include="Day23\Day23_Input_Example.txt" />
+    <Content Include="Day22\Day22_Input.txt" />
+    <Content Include="Day22\Day22_Input_Example.txt" />
+    <Content Include="Day21\Day21_Input.txt" />
+    <Content Include="Day21\Day21_Input_Example.txt" />
+    <Content Include="Day20\Day20_Input.txt" />
+    <Content Include="Day20\Day20_Input_Example.txt" />
+    <Content Include="Day19\Day19_Input.txt" />
+    <Content Include="Day19\Day19_Input_Example.txt" />
+    <Content Include="Day18\Day18_Input.txt" />
+    <Content Include="Day18\Day18_Input_Example.txt" />
+    <Content Include="Day17\Day17_Input.txt" />
+    <Content Include="Day17\Day17_Input_Example.txt" />
+    <Content Include="Day16\Day16_Input.txt" />
+    <Content Include="Day16\Day16_Input_Example.txt" />
+    <Content Include="Day15\Day15_Input.txt" />
+    <Content Include="Day15\Day15_Input_Example.txt" />
+    <Content Include="Day14\Day14_Input.txt" />
+    <Content Include="Day14\Day14_Input_Example.txt" />
+    <Content Include="Day13\Day13_Input.txt" />
+    <Content Include="Day13\Day13_Input_Example.txt" />
+    <Content Include="Day12\Day12_Input.txt" />
+    <Content Include="Day12\Day12_Input_Example.txt" />
+    <Content Include="Day11\Day11_Input.txt" />
+    <Content Include="Day11\Day11_Input_Example.txt" />
+    <Content Include="Day10\Day10_Input.txt" />
+    <Content Include="Day10\Day10_Input_Example.txt" />
+    <Content Include="Day9\Day9_Input.txt" />
+    <Content Include="Day9\Day9_Input_Example.txt" />
+    <Content Include="Day8\Day8_Input.txt" />
+    <Content Include="Day8\Day8_Input_Example.txt" />
+    <Content Include="Day7\Day7_Input.txt" />
+    <Content Include="Day7\Day7_Input_Example.txt" />
     <Content Include="Day6\Day6_Input.txt" />
     <Content Include="Day6\Day6_Input_Example.txt" />
     <Content Include="Day5\Day5_Input.txt" />

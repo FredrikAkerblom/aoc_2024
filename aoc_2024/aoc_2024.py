@@ -1,6 +1,7 @@
 import importlib.util
 import sys
 import os
+import time
 from datetime import datetime
 
 
@@ -17,36 +18,36 @@ def show_result(day: str, is_part_two: bool, is_live: bool, result: str):
     
     
 def run_day(day: int, is_part_two: bool, use_live_data: bool):
-    #try:
-        module_name = f"Day{day}"
-        module_path = os.path.join(module_name, f"{module_name}.py")
+    module_name = f"Day{day}"
+    module_path = os.path.join(module_name, f"{module_name}.py")
         
-        spec = importlib.util.spec_from_file_location(module_name, module_path)
-        day_module = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(day_module)
+    spec = importlib.util.spec_from_file_location(module_name, module_path)
+    day_module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(day_module)
         
-        data = read_aoc_input(module_name, use_live_data)
+    data = read_aoc_input(module_name, use_live_data)
         
-        if (is_part_two):
-            result = day_module.part_two(data)
-        else:
-            result = day_module.part_one(data)
+    if (is_part_two):
+        result = day_module.part_two(data)
+    else:
+        result = day_module.part_one(data)
             
-        show_result(module_name, is_part_two, use_live_data, result)
-    #except Exception as e:
-    #    print(e)
+    show_result(module_name, is_part_two, use_live_data, result)
 
 
 day_to_run = datetime.today().day
-# day_to_run = 1
+# day_to_run = 22
 run_day(day_to_run, False, False)
 run_day(day_to_run, True, False)
 print("")
+
+start_time = time.time()
 run_day(day_to_run, False, True)
-run_day(day_to_run, True, True)
+print(f"{round((time.time() - start_time) * 1000, 4)}ms")
 print("")
 
-# day_to_run = 1
-# is_part_two = True
-# use_live_data = True
-# run_day(day_to_run, is_part_two, use_live_data)
+start_time = time.time()
+run_day(day_to_run, True, True)
+print(f"{round((time.time() - start_time) * 1000, 4)}ms")
+
+print("")
